@@ -21,7 +21,7 @@
 /* Begin PBXFileReference section */
 		C40888B81C4B09B300141BD7 /* DataPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoints.swift; sourceTree = "<group>"; };
 		C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfpddistricts.geojson; sourceTree = "<group>"; };
-		C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictPoints.swift; sourceTree = "<group>"; };
+		C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistrictPoints.swift; path = SpotCrime/DistrictPoints.swift; sourceTree = "<group>"; };
 		C40888C61C4B769E00141BD7 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		C45ACFCF1C4AF21500B35AD6 /* SpotCrime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotCrime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				C40888B81C4B09B300141BD7 /* DataPoints.swift */,
-				C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -76,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C40888C61C4B769E00141BD7 /* DataObject.swift */,
+				C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */,
 			);
 			name = Model;
 			path = ..;
@@ -102,9 +102,9 @@
 			children = (
 				C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */,
 				C40888C31C4B75ED00141BD7 /* Model */,
+				C40888C21C4B726100141BD7 /* Views */,
 				C40888C01C4B724700141BD7 /* ViewController */,
 				C40888C11C4B725300141BD7 /* Resources */,
-				C40888C21C4B726100141BD7 /* Views */,
 			);
 			path = SpotCrime;
 			sourceTree = "<group>";

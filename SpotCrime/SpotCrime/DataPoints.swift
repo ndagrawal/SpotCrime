@@ -16,6 +16,7 @@ class DataPoints: NSObject,MKAnnotation{
     let locationName:String!
     let district:String!
     let coordinate:CLLocationCoordinate2D
+
     init(title:String,locationName:String,district:String,coordinate:CLLocationCoordinate2D){
         self.title = title
         self.locationName = locationName
@@ -47,16 +48,7 @@ class DataPoints: NSObject,MKAnnotation{
                 let location2d:CLLocationCoordinate2D = CLLocationCoordinate2D.init(latitude: latitude!, longitude: longitude!)
             return DataPoints.init(title: titleForPoint, locationName: subtitleForPoint, district: pddDistrict, coordinate: location2d)
     }
-
-    // annotation callout info button opens this mapItem in Maps app
-    func mapItem() -> MKMapItem {
-        let addressDictionary:[String:String!] = [String(CNPostalAddressStreetKey): subtitle]
-        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary)
-        let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = title
-        return mapItem
-    }
-
+    
     var subtitle:String?{
         return locationName
     }

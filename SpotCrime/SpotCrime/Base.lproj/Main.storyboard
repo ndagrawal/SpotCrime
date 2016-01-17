@@ -18,12 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYn-Sc-gik">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="wS7-yR-Lbx"/>
+                                    <constraint firstAttribute="height" constant="64" id="wS7-yR-Lbx"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title="SpotCrime" id="bVQ-Ji-V70"/>
+                                    <navigationItem title="Spot Crime" id="bVQ-Ji-V70"/>
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tHA-f4-ffu">
@@ -33,7 +33,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="SYn-Sc-gik" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="240-sR-zgG"/>
-                            <constraint firstItem="SYn-Sc-gik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8UY-oK-czO"/>
+                            <constraint firstItem="SYn-Sc-gik" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="8UY-oK-czO"/>
                             <constraint firstItem="tHA-f4-ffu" firstAttribute="top" secondItem="SYn-Sc-gik" secondAttribute="bottom" id="LK5-vx-sCN"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tHA-f4-ffu" secondAttribute="bottom" id="Pv3-1l-XX6"/>
                             <constraint firstItem="tHA-f4-ffu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Sby-bF-eWF"/>
@@ -43,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="tHA-f4-ffu" id="ToN-dC-p2x"/>
+                        <outlet property="navigationBar" destination="SYn-Sc-gik" id="EYw-V8-T8V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
