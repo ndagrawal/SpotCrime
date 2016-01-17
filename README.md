@@ -14,9 +14,11 @@ An App that reports the crime in san Fransisco
 
 ----------------   
 **Time Spent : 4 Hours**  
-* Key Learning : Learning the mapkit and its classes. 
+Key Learning : Learning the mapkit and its classes. 
+
 ---------------   
-**Application snapshot** 
+**Application snapshot**
+![alt tag](http://g.recordit.co/1H2Kv7UsKB.gif)
 
 
 -------------------
