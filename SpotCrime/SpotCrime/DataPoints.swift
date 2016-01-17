@@ -60,16 +60,4 @@ class DataPoints: NSObject,MKAnnotation{
     var subtitle:String?{
         return locationName
     }
-
-//    func pinColor() -> MKPinAnnotationColor  {
-//        switch discipline {
-//        case "Sculpture", "Plaque":
-//            return .Red
-//        case "Mural", "Monument":
-//            return .Purple
-//        default:
-//            return .Green
-//        }
-//    }
-
 }

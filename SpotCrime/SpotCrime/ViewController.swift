@@ -9,7 +9,8 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController,NSURLSessionDelegate{
+class ViewController: UIViewController,NSURLSessionDelegate,MKMapViewDelegate{
+
     //IBOutlets
     @IBOutlet weak var mapView: MKMapView!
     var locationManager = CLLocationManager()
@@ -30,8 +31,7 @@ class ViewController: UIViewController,NSURLSessionDelegate{
         checkLocationAuthorizationStatus()
         mapView.delegate = self
         loadDataFromSODAApi()
-
-        }
+    }
 
     //MARK: Setup Methods
     func centerMapOnLocation(location:CLLocation){
@@ -63,10 +63,9 @@ class ViewController: UIViewController,NSURLSessionDelegate{
                 let datapoint:DataPoints! = DataPoints.fromDataArray(dataDictionary)
                 self.dataPoints.append(datapoint)
                 }
-                self.mapView.addAnnotations(self.dataPoints)
                 self.districtNameAsPerCrimeFrequency = self.sortDistrictAsPerCrimeCount()
                 self.getAllDistricts()
-
+                self.mapView.addAnnotations(self.dataPoints)
             })
         }catch let parseError{
                 print("Response Status\(parseError)")
@@ -128,13 +127,13 @@ class ViewController: UIViewController,NSURLSessionDelegate{
     func sortDistrictAsPerCrimeCount()->[String]{
         DataObject.sharedInstance.districtData.allKeys
         var crimeCount:[Int] = DataObject.sharedInstance.districtData.allValues as! [Int]
-        crimeCount = crimeCount.sort()
+        //Sorting in descending order.
+        crimeCount = crimeCount.sort{ $0 > $1 }
         var sortedDistrict:[String] = [String]()
         for item in crimeCount {
             let tempItem:[String] = DataObject.sharedInstance.districtData.allKeysForObject(item) as! [String]
             sortedDistrict.appendContentsOf(tempItem)
         }
-
         return sortedDistrict
     }
 
@@ -153,9 +152,14 @@ class ViewController: UIViewController,NSURLSessionDelegate{
         if let annotation:DataPoints! = annotation as! DataPoints{
             let identifier = "pin"
             var view:MKPinAnnotationView
-            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView{
+            if let dequeuedView = mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as? MKPinAnnotationView{
                 dequeuedView.annotation = annotation
                 view = dequeuedView
+                view.pinTintColor = colorForDistricts(annotation.district)
+                return view;
+            }else{
+                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                 view.pinTintColor = colorForDistricts(annotation.district)
                 return view;
             }
         }
@@ -191,7 +195,6 @@ class ViewController: UIViewController,NSURLSessionDelegate{
 
             case self.districtNameAsPerCrimeFrequency[6]:
                 return UIColor(red: 0.725, green: 0.784, blue: 0, alpha: 1)
-
             default:
                 return UIColor(red: 0.651, green: 1, blue: 0, alpha: 1)
         }

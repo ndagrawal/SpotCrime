@@ -10,7 +10,6 @@
 		C40888B91C4B09B300141BD7 /* DataPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888B81C4B09B300141BD7 /* DataPoints.swift */; };
 		C40888BB1C4B339900141BD7 /* sfpddistricts.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */; };
 		C40888BD1C4B3EDD00141BD7 /* DistrictPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */; };
-		C40888BF1C4B662600141BD7 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888BE1C4B662600141BD7 /* ViewControllerExtension.swift */; };
 		C40888C71C4B769E00141BD7 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888C61C4B769E00141BD7 /* DataObject.swift */; };
 		C45ACFD31C4AF21500B35AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */; };
 		C45ACFD51C4AF21500B35AD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45ACFD41C4AF21500B35AD6 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 		C40888B81C4B09B300141BD7 /* DataPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoints.swift; sourceTree = "<group>"; };
 		C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfpddistricts.geojson; sourceTree = "<group>"; };
 		C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistrictPoints.swift; sourceTree = "<group>"; };
-		C40888BE1C4B662600141BD7 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		C40888C61C4B769E00141BD7 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
 		C45ACFCF1C4AF21500B35AD6 /* SpotCrime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotCrime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				C45ACFD41C4AF21500B35AD6 /* ViewController.swift */,
-				C40888BE1C4B662600141BD7 /* ViewControllerExtension.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -187,7 +184,6 @@
 			files = (
 				C40888BD1C4B3EDD00141BD7 /* DistrictPoints.swift in Sources */,
 				C40888B91C4B09B300141BD7 /* DataPoints.swift in Sources */,
-				C40888BF1C4B662600141BD7 /* ViewControllerExtension.swift in Sources */,
 				C45ACFD51C4AF21500B35AD6 /* ViewController.swift in Sources */,
 				C40888C71C4B769E00141BD7 /* DataObject.swift in Sources */,
 				C45ACFD31C4AF21500B35AD6 /* AppDelegate.swift in Sources */,
