@@ -11,6 +11,7 @@
 		C40888BB1C4B339900141BD7 /* sfpddistricts.geojson in Resources */ = {isa = PBXBuildFile; fileRef = C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */; };
 		C40888BD1C4B3EDD00141BD7 /* DistrictPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */; };
 		C40888C71C4B769E00141BD7 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40888C61C4B769E00141BD7 /* DataObject.swift */; };
+		C40888C91C4C48A600141BD7 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = C40888C81C4C48A600141BD7 /* iTunesArtwork.png */; };
 		C45ACFD31C4AF21500B35AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */; };
 		C45ACFD51C4AF21500B35AD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45ACFD41C4AF21500B35AD6 /* ViewController.swift */; };
 		C45ACFD81C4AF21500B35AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45ACFD61C4AF21500B35AD6 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sfpddistricts.geojson; sourceTree = "<group>"; };
 		C40888BC1C4B3EDD00141BD7 /* DistrictPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DistrictPoints.swift; path = SpotCrime/DistrictPoints.swift; sourceTree = "<group>"; };
 		C40888C61C4B769E00141BD7 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		C40888C81C4C48A600141BD7 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		C45ACFCF1C4AF21500B35AD6 /* SpotCrime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotCrime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45ACFD21C4AF21500B35AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45ACFD41C4AF21500B35AD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				C40888BA1C4B339900141BD7 /* sfpddistricts.geojson */,
 				C45ACFD61C4AF21500B35AD6 /* Main.storyboard */,
+				C40888C81C4C48A600141BD7 /* iTunesArtwork.png */,
 				C45ACFD91C4AF21500B35AD6 /* Assets.xcassets */,
 				C45ACFDB1C4AF21500B35AD6 /* LaunchScreen.storyboard */,
 				C45ACFDE1C4AF21500B35AD6 /* Info.plist */,
@@ -171,6 +174,7 @@
 				C45ACFDD1C4AF21500B35AD6 /* LaunchScreen.storyboard in Resources */,
 				C45ACFDA1C4AF21500B35AD6 /* Assets.xcassets in Resources */,
 				C40888BB1C4B339900141BD7 /* sfpddistricts.geojson in Resources */,
+				C40888C91C4C48A600141BD7 /* iTunesArtwork.png in Resources */,
 				C45ACFD81C4AF21500B35AD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
